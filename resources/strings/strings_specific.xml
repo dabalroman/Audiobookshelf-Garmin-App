@@ -1,5 +1,6 @@
 <strings>
     <string id="AppName">Audiobooks Green</string>
+    <string id="AppNameBeta">Audiobooks Beta</string>
 
 
     <!-- Complications -->

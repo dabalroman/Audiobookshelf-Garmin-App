@@ -76,3 +76,18 @@ Follow the [instructions](https://developer.garmin.com/connect-iq/connect-iq-bas
 ## Installing Your Own Proxy Server
 
 You can find the source code and installation instructions for your own proxy server by following **[this link](https://github.com/fabrikant/AudiobooksGreenProxy)**.
+
+## Beta build (fork)
+
+`manifest-beta.xml` + `beta.jungle` build "Audiobooks Beta": its own app id, so it installs next to the
+store's Audiobooks Green; products: `fr970`. PowerShell, Connect IQ SDK + developer key in
+`%USERPROFILE%\.garmin\developer_key.der`:
+
+```powershell
+scripts\build.ps1                # bin\AudiobooksBeta-fr970.prg
+scripts\build.ps1 -Beta N        # signed bin\betaN\AudiobooksBeta.iq, upload as version 0.0.N
+```
+
+Upload the `.iq` at apps.garmin.com -> Developer -> Upload an App -> Beta App; a beta installs only on
+the uploading account. With no built-in proxy, set the proxy URL in the app settings. A fix after a
+beta has gone out is the next N.

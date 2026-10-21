@@ -1,0 +1,4 @@
+# Replaces monkey.jungle for the beta build: a second jungle cannot reset project.manifest.
+project.manifest = manifest-beta.xml
+
+fr970.resourcePath = $(base.resourcePath);resources-comlications
